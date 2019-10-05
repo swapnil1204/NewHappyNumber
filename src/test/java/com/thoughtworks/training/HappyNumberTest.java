@@ -19,4 +19,11 @@ public class HappyNumberTest {
         Assertions.assertTrue(one.check());
     }
 
+    @Test
+    void givenNumberIsTen_WhenCheck_ThenShouldReturnTrue() {
+        HappyNumber ten = new HappyNumber(10);
+
+        Assertions.assertTrue(ten.check());
+    }
+
 }

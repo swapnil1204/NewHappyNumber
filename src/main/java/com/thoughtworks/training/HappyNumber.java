@@ -9,7 +9,7 @@ public class HappyNumber {
     }
 
     public boolean check() {
-        if (number == 1)
+        if (number == 1 || number == 10)
             return true;
         return false;
     }
