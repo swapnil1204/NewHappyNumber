@@ -26,4 +26,11 @@ public class HappyNumberTest {
         Assertions.assertTrue(ten.check());
     }
 
+    @Test
+    void givenNumberIsHundreds_WhenCheck_ThenShouldReturnTrue() {
+        HappyNumber hundreds = new HappyNumber(100);
+
+        Assertions.assertTrue(hundreds.check());
+    }
+
 }
