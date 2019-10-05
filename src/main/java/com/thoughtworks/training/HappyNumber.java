@@ -6,7 +6,7 @@ import java.util.List;
 public class HappyNumber {
 
     private int number;
-    private int square = 0;
+    private int sumOfSquare = 0;
 
     public HappyNumber(int number) {
         this.number = number;
@@ -22,11 +22,12 @@ public class HappyNumber {
             digit.add(lastDigit);
         }
         for (int i = 0; i < digit.size(); i++) {
-            square = square + digit.get(i) * digit.get(i);
+            sumOfSquare = sumOfSquare + digit.get(i) * digit.get(i);
         }
-        if(square == 1){
+        if(sumOfSquare == 1){
             return true;
         }
         return false;
     }
+
 }
