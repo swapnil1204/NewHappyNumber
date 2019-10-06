@@ -14,8 +14,8 @@ public class HappyNumber {
     public boolean check() {
         if (number == 1 || number == 10)
             return true;
-        List<Integer> digit = getdigitsList(number); //7
-        int sumOfSquare = getSumOfSquare(digit); //49
+        List<Integer> digit = getdigitsList(number);
+        int sumOfSquare = getSumOfSquare(digit);
         if (sumOfSquare == 1) {
             return true;
         }
@@ -34,7 +34,7 @@ public class HappyNumber {
         this.number = sumOfSquare;
         digit = getdigitsList(number);
         sumOfSquare = getSumOfSquare(digit);
-        if (sumOfSquare == 1 || sumOfSquare == 10) {
+        if (sumOfSquare == 1 || sumOfSquare == 10 || sumOfSquare == 100) {
             return true;
         }
         return false;
