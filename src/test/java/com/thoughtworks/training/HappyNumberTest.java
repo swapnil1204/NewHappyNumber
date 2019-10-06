@@ -34,10 +34,10 @@ public class HappyNumberTest {
     }
 
     @Test
-    void givenNumberIs_WhenCheck_ThenShouldReturnTrue() {
-        HappyNumber thirteen = new HappyNumber(13);
+    void givenNumberIsEightySix_WhenCheck_ThenShouldReturnTrue() {
+        HappyNumber eightySix = new HappyNumber(86);
 
-        Assertions.assertTrue(thirteen.check());
+        Assertions.assertTrue(eightySix.check());
     }
 
 }
