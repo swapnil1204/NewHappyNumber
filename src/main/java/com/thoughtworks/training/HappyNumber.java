@@ -25,6 +25,12 @@ public class HappyNumber {
         if (sumOfSquare1 == 1) {
             return true;
         }
+        this.number = sumOfSquare1; //100
+        List<Integer> thirdIterationList = getdigitsList(number); //100 -->[0,0,1]
+        int sumOfSquare3 = getSumOfSquare(thirdIterationList); //[0,0,1]--> 1
+        if (sumOfSquare3 == 1) {
+            return true;
+        }
         return false;
     }
 

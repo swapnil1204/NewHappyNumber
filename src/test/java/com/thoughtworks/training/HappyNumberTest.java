@@ -40,4 +40,11 @@ public class HappyNumberTest {
         Assertions.assertTrue(eightySix.check());
     }
 
+    @Test
+    void givenNumberIsEightyTwo_WhenCheck_ThenShouldReturnTrue() {
+        HappyNumber eightyTwo = new HappyNumber(82);
+
+        Assertions.assertTrue(eightyTwo.check());
+    }
+
 }
