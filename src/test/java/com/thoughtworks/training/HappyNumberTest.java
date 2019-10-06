@@ -47,4 +47,11 @@ public class HappyNumberTest {
         Assertions.assertTrue(eightyTwo.check());
     }
 
+    @Test
+    void givenNumberIsSeven_WhenCheck_ThenShouldReturnTrue() {
+        HappyNumber seven = new HappyNumber(7);
+
+        Assertions.assertTrue(seven.check());
+    }
+
 }
